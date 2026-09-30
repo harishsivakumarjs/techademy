@@ -29,7 +29,7 @@ is missing. Resend errors are also logged in the terminal, never sent to the bro
     index.html               SEO tags, JSON-LD
     api/enquiry.js           serverless function that emails enquiry form submissions
     .env.example             environment variables the enquiry email needs
-    public/                  favicon.svg, robots.txt, sitemap.xml
+    public/                  favicon.png, robots.txt, sitemap.xml
     src/
       config.js              ★ email, address, office hours (edit here)
       data/courses.jsx       ★ course categories and course list, incl. popup topics (edit here)

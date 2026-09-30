@@ -21,7 +21,8 @@ p{margin:0}
 /* header */
 header.site{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg2) 94%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:16px;height:68px}
-.logo{display:flex;align-items:center;text-decoration:none;color:var(--ink)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.logo-img{height:42px;width:auto;flex:none}
 .logo b{display:block;font:800 1.35rem/1.1 "Montserrat",var(--font);letter-spacing:.01em;color:#002150}
 .logo-a{background:linear-gradient(160deg,#002150 55%,#1E4FA8);-webkit-background-clip:text;background-clip:text;color:transparent}
 .logo small{display:block;font:500 .66rem/1.2 "Montserrat",var(--font);color:#617389;letter-spacing:.23em;margin:-1px -.23em 0 0;white-space:nowrap}
@@ -283,7 +284,7 @@ footer{background:#0F1729;color:#AEB6C8;padding:56px 0 calc(28px + env(safe-area
 footer h3{color:#fff;font-size:1rem;margin-bottom:14px}
 footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 footer a{color:#AEB6C8;text-decoration:none}footer a:hover{color:#fff}
-footer .logo{color:#fff}footer .logo b{color:#fff}footer .logo-a{background:none;color:inherit}footer .logo small{color:#AEB6C8}
+footer .logo{color:#fff}footer .logo-img{box-sizing:content-box;height:38px;padding:5px;background:#fff;border-radius:10px}footer .logo b{color:#fff}footer .logo-a{background:none;color:inherit}footer .logo small{color:#AEB6C8}
 footer p{margin-top:14px;max-width:34ch;font-size:.95rem}
 .copy{border-top:1px solid #243049;margin-top:40px;padding-top:20px;font-size:.87rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media (max-width:860px){.foot{grid-template-columns:1fr 1fr}}
@@ -304,6 +305,7 @@ img,svg{max-width:100%}
 @media (max-width:640px){
   .bar{height:62px}
   nav.main{top:62px}
+  .logo-img{height:36px}
   .logo b{font-size:1.12rem}
   .logo small{font-size:.55rem}
   .hero{padding:32px 0 96px}
