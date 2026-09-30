@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
-// tagline = show "TECHNOLOGY & TRAINING COMPANY" under the name (the footer does, the header doesn't)
+// tagline = show "TRAINING SERVICES" under the name (the footer does, the header doesn't)
 export default function Logo({ label, tagline = true }) {
   return (
     <Link className="logo" to="/" aria-label={label}>
@@ -10,7 +10,7 @@ export default function Logo({ label, tagline = true }) {
         <b>
           TECH<span className="logo-a">A</span>DEMY
         </b>
-        {tagline && <small>TECHNOLOGY &amp; TRAINING COMPANY</small>}
+        {tagline && <small>TRAINING SERVICES</small>}
       </span>
     </Link>
   )

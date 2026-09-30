@@ -75,7 +75,7 @@ export default function Home() {
       <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <span className="badge">Job-Oriented IT Training Institute</span>
+            <span className="badge">Technology and Training Company</span>
             <h1>
               Learn In-Demand Tech Skills and Build a Successful <span className="o">IT Career!</span>
             </h1>
@@ -121,15 +121,6 @@ export default function Home() {
                 <span className="chip">Classroom</span>
               </div>
             </div>
-            <div className="hcard" style={{ width: 'min(290px,84%)', marginTop: 16 }}>
-              <h3 style={{ marginBottom: 8 }}>Your learning path</h3>
-              <div className="flow">
-                <div>Fresher / Career gap</div>
-                <span>›››</span>
-                <div>Software Developer</div>
-              </div>
-            </div>
-            <span className="pin" aria-hidden="true" />
           </div>
         </div>
       </section>

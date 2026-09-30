@@ -24,10 +24,11 @@ export default function Footer() {
           <div>
             <h3>Courses</h3>
             <ul>
-              <li><Link to="/technologies">Java Full Stack</Link></li>
-              <li><Link to="/technologies">Python</Link></li>
-              <li><Link to="/technologies">Data Science</Link></li>
-              <li><Link to="/technologies">AWS &amp; DevOps</Link></li>
+              <li><Link to="/technologies?course=java-full-stack">Java Full Stack</Link></li>
+              <li><Link to="/technologies?course=python">Python</Link></li>
+              <li><Link to="/technologies?course=data-science">Data Science</Link></li>
+              <li><Link to="/technologies?category=cloud">AWS &amp; DevOps</Link></li>
+              <li><Link to="/technologies">All Courses</Link></li>
             </ul>
           </div>
           <div>

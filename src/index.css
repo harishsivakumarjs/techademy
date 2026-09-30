@@ -72,23 +72,17 @@ nav.main a.nav-cta:hover{background:var(--brand-dark)}
 .points li{display:flex;gap:10px;align-items:flex-start}
 .points li::before{content:"✦";flex:none;width:20px;height:20px;border-radius:50%;background:var(--brand-soft);color:var(--brand);font-size:.7rem;display:grid;place-items:center;margin-top:2px}
 .points b{color:var(--ink)}
-.hero-right{position:relative;min-height:400px}
+.hero-right{position:relative}
 .hero-right .lead{font-weight:700;font-size:1.15rem;color:var(--ink);text-align:center;margin-bottom:22px}
 .hero-right .lead span{color:var(--green)}
 .dots{position:absolute;inset:50px 0 0;background-image:radial-gradient(circle,#C9CCD4 1.6px,transparent 1.8px);background-size:11px 11px;-webkit-mask:radial-gradient(ellipse 60% 55% at 50% 50%,#000 40%,transparent 75%);mask:radial-gradient(ellipse 60% 55% at 50% 50%,#000 40%,transparent 75%);opacity:.9}
 .hcard{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px;width:min(340px,92%);margin:0 auto}
-.hcard + .hcard{margin-top:-6px}
 .hcard h3{font-size:.98rem;margin-bottom:10px}
 .brow{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:.88rem}
 .brow b{color:var(--ink);font-weight:600;display:block}
 .brow small{color:var(--soft)}
 .chip{font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--brand-soft);color:var(--brand);white-space:nowrap}
-.flow{display:flex;align-items:center;gap:10px;margin-top:4px}
-.flow div{flex:1;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:8px;text-align:center;font-size:.78rem;font-weight:600;color:var(--ink)}
-.flow div:last-child{background:var(--brand-soft);border-color:#BFD7FF;color:#1E40AF}
-.flow span{color:#34D399;font-weight:800;letter-spacing:-2px}
-.pin{position:absolute;left:50%;bottom:34px;width:14px;height:14px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 6px color-mix(in srgb,var(--brand) 25%,transparent)}
-@media (max-width:960px){.hero-grid{grid-template-columns:1fr}.hero-right{min-height:0}.pin{display:none}}
+@media (max-width:960px){.hero-grid{grid-template-columns:1fr}}
 
 /* stats card */
 .stats{position:relative;margin-top:-64px;z-index:2}
