@@ -36,7 +36,7 @@ function validate(f) {
 }
 
 export default function Contact() {
-  usePageTitle('Contact Us | Techademy Training Services')
+  usePageTitle('Contact Us | Techademy Technology and Training Company')
   // links such as "Book Free Demo" pass a starting message in the router state
   const prefill = useLocation().state?.message
   const [form, setForm] = useState(() => (prefill ? { ...INITIAL, message: prefill } : INITIAL))

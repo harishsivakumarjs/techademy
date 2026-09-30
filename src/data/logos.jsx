@@ -2,11 +2,12 @@
 import { DiCss3, DiJava } from 'react-icons/di'
 import {
   SiDjango, SiDocker, SiHtml5, SiJavascript, SiJenkins, SiKubernetes, SiMongodb, SiMysql, SiNodedotjs,
-  SiPandas, SiPostgresql, SiPython, SiPytorch, SiReact, SiSap, SiScikitlearn, SiSelenium, SiSpring, SiTensorflow,
+  SiLangchain, SiPandas, SiPostgresql, SiPython, SiReact, SiSap, SiScikitlearn, SiSelenium, SiSpring,
 } from 'react-icons/si'
 import aws from '../assets/logos/aws.svg'
 import azure from '../assets/logos/azure.svg'
 import excel from '../assets/logos/excel.svg'
+import openai from '../assets/logos/openai.svg'
 import powerbi from '../assets/logos/powerbi.svg'
 import salesforce from '../assets/logos/salesforce.svg'
 import tableau from '../assets/logos/tableau.svg'
@@ -27,8 +28,8 @@ export const LOGOS = {
   js: { name: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
   pandas: { name: 'Pandas', Icon: SiPandas, color: '#150458' },
   sklearn: { name: 'scikit-learn', Icon: SiScikitlearn, color: '#F7931E' },
-  tensorflow: { name: 'TensorFlow', Icon: SiTensorflow, color: '#FF6F00' },
-  pytorch: { name: 'PyTorch', Icon: SiPytorch, color: '#EE4C2C' },
+  openai: { name: 'OpenAI', src: openai },
+  langchain: { name: 'LangChain', Icon: SiLangchain, color: '#1C3C3C' },
   excel: { name: 'Microsoft Excel', src: excel },
   mysql: { name: 'MySQL', Icon: SiMysql, color: '#4479A1' },
   powerbi: { name: 'Power BI', src: powerbi },

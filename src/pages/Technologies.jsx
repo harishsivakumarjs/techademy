@@ -7,7 +7,7 @@ import CourseExplorer from '../components/CourseExplorer'
 const CATEGORIES = [ALL_CAT, ...CATS.slice(1)]
 
 export default function Technologies() {
-  usePageTitle('Technologies & Courses | Techademy Training Services')
+  usePageTitle('Technologies & Courses | Techademy Technology and Training Company')
 
   return (
     <>

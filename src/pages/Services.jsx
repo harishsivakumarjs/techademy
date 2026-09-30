@@ -5,7 +5,7 @@ import Band from '../components/Band'
 import { SERVICES } from '../data/services'
 
 export default function Services() {
-  usePageTitle('Services | Techademy Training Services')
+  usePageTitle('Services | Techademy Technology and Training Company')
 
   return (
     <>

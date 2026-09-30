@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className="site">
       <div className="wrap bar">
-        <Logo label="Techademy Training Services home" tagline={false} />
+        <Logo label="Techademy Technology and Training Company home" tagline={false} />
         <button
           className="menu-btn"
           aria-expanded={open}

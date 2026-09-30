@@ -1,4 +1,4 @@
-# Techademy Training Services – Website (React)
+# Techademy Technology and Training Company – Website (React)
 
 React + Vite version of the static Techademy site. Same design, same content, same behaviour
 (course explorer, accordion, enquiry form) — now split into components.

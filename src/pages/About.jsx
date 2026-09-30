@@ -10,7 +10,7 @@ const DIFFERENTIATORS = [
 ]
 
 export default function About() {
-  usePageTitle('About Us | Techademy Training Services')
+  usePageTitle('About Us | Techademy Technology and Training Company')
 
   return (
     <>
@@ -21,9 +21,10 @@ export default function About() {
       <section className="sec">
         <div className="wrap two">
           <div className="prose">
-            <p>Techademy Training Services is an IT training institute helping students, graduates and working professionals start and grow their careers in technology.</p>
+            <p>Techademy is a technology and training company helping students, graduates, institutions and working professionals start and grow their careers in technology.</p>
             <p>We believe people learn technology best by doing it. Every course combines concept classes with lab practice and a real project, guided by trainers who work in the industry.</p>
             <p>After training, we continue supporting our students with resume preparation, mock interviews and job referrals until they are ready for their first role.</p>
+            <p>Our team brings over 50 years of combined experience in IT and Banking training.</p>
           </div>
           <div className="mvg">
             <div className="mv">
@@ -35,6 +36,21 @@ export default function About() {
               <div className="ic" style={{ background: '#E0E7FF' }}>🔭</div>
               <h3>Our Vision</h3>
               <p>To be the training partner students and companies trust for industry-ready skills.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="exp">
+            <strong className="exp-num">50+</strong>
+            <div>
+              <h2>Years of combined experience</h2>
+              <p>
+                Across IT and Banking training, our team has helped learners and professionals build practical,
+                job-ready skills.
+              </p>
             </div>
           </div>
         </div>

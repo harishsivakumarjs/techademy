@@ -67,7 +67,7 @@ const Arrow = () => (
 )
 
 export default function Home() {
-  usePageTitle('Techademy Training Services | IT Training, Courses & Placement Support')
+  usePageTitle('Techademy Technology and Training Company | IT Training, Courses & Placement Support')
 
   return (
     <>

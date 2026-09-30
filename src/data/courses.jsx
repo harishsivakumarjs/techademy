@@ -85,10 +85,10 @@ export const COURSES = [
     topics: ['Python for data analysis with NumPy and Pandas', 'Data cleaning and exploratory analysis', 'Statistics and data visualisation', 'Supervised and unsupervised learning with scikit-learn', 'Evaluating models on real-world datasets'],
   },
   {
-    t: 'AI & Generative AI', b: 'AI & Generative AI', c: 'data', g: ['#312E81', '#6366F1'],
-    logos: [L.tensorflow, L.pytorch],
-    desc: 'Understand neural networks and deep learning with TensorFlow and PyTorch, and build practical applications using large language models and prompt engineering.',
-    topics: ['Machine learning and neural network fundamentals', 'Deep learning with TensorFlow and PyTorch', 'How large language models work', 'Prompt engineering techniques', 'Building an application with a generative AI API'],
+    t: 'Generative AI & Prompt Engineering', b: 'Generative AI', c: 'data', pop: true, g: ['#312E81', '#6366F1'],
+    logos: [L.python, L.openai, L.langchain],
+    desc: 'Learn how generative AI works and build practical applications with large language models, prompt engineering and AI APIs.',
+    topics: ['Generative AI and large language model fundamentals', 'Prompt engineering techniques', 'Building apps with AI APIs', 'Chatbots and retrieval-augmented generation (RAG)', 'Responsible and safe use of AI', 'Mini project'],
   },
   {
     t: 'Data Analytics (Excel, SQL, Power BI)', b: 'Data Analytics', c: 'bi', pop: true, g: ['#1E3A5F', '#2E7D9A'],
