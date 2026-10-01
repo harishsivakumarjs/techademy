@@ -7,6 +7,43 @@ import TechLogo from '../components/TechLogo'
 import Accordion from '../components/Accordion'
 import Band from '../components/Band'
 
+// Stats bar under the hero
+const STATS = [
+  {
+    title: '25+ Years',
+    text: 'Training Excellence',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="9" r="6" />
+        <path d="M8.5 13.8 7 22l5-3 5 3-1.5-8.2" />
+      </svg>
+    ),
+  },
+  {
+    title: '4.9/5',
+    stars: true,
+    text: 'Google Rating',
+    icon: (
+      <svg viewBox="0 0 24 24">
+        <path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z" />
+        <path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z" />
+        <path fill="#FBBC05" d="M6.4 14a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9z" />
+        <path fill="#EA4335" d="M12 6c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.5L6.4 10C7.2 7.8 9.4 6 12 6z" />
+      </svg>
+    ),
+  },
+  {
+    title: '100+',
+    text: 'Corporate & Institutional Clients',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="7" width="18" height="13" rx="2" />
+        <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18" />
+      </svg>
+    ),
+  },
+]
+
 const POINTS = [
   [<b key="a">Industry-expert trainers</b>, ' with real project experience'],
   [<b key="b">100% hands-on</b>, ' lab practice and live projects'],
@@ -125,41 +162,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS – replace with the institute's real numbers */}
+      {/* STATS */}
       <div className="wrap stats">
         <div className="box">
-          <div className="stat">
-            <div className="ic">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <circle cx="9" cy="8" r="4" />
-                <path d="M1 21c.6-4 3.8-7 8-7s7.4 3 8 7z" />
-                <circle cx="17" cy="7" r="3" opacity=".6" />
-              </svg>
+          {STATS.map((st) => (
+            <div className="stat" key={st.text}>
+              <div className="ic">{st.icon}</div>
+              <h3>
+                {st.title}
+                {st.stars && <span className="stars">★★★★★</span>}
+              </h3>
+              <p>{st.text}</p>
             </div>
-            <h3>1000+ Students</h3>
-            <p>Trained &amp; placed</p>
-          </div>
-          <div className="stat">
-            <div className="ic">
-              <svg viewBox="0 0 24 24">
-                <path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z" />
-                <path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z" />
-                <path fill="#FBBC05" d="M6.4 14a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9z" />
-                <path fill="#EA4335" d="M12 6c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.5L6.4 10C7.2 7.8 9.4 6 12 6z" />
-              </svg>
-            </div>
-            <h3>4.9/5 <span className="stars">★★★★★</span></h3>
-            <p>Google rating</p>
-          </div>
-          <div className="stat">
-            <div className="ic">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 19V5M4 19h16M8 15l4-4 3 3 5-6" />
-              </svg>
-            </div>
-            <h3>16+ Courses</h3>
-            <p>Across development, data, cloud &amp; testing</p>
-          </div>
+          ))}
         </div>
       </div>
 

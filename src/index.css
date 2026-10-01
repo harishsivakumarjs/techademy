@@ -212,9 +212,7 @@ nav.main a.nav-cta:hover{background:var(--brand-dark)}
 .band::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.5),transparent 70%)}
 .band h2{color:#fff;font-size:clamp(1.5rem,3vw,2rem);font-weight:800;max-width:24ch}
 .band p{color:#AEB6C8;margin-top:8px}
-.band > div{flex:1 1 360px}
 .band .btn{position:relative;z-index:1}
-.band .band-note{color:#fff;font-weight:700;margin-top:14px}
 
 /* inner page header */
 .phead{background:var(--hero);padding:clamp(40px,6vw,72px) 0}
@@ -236,7 +234,6 @@ nav.main a.nav-cta:hover{background:var(--brand-dark)}
 .years{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:clamp(28px,4vw,44px);box-shadow:var(--shadow);text-align:center}
 .years strong{display:block;font-size:clamp(2.6rem,6vw,4rem);font-weight:800;line-height:1;color:var(--brand)}
 .years span{display:block;margin-top:10px;font-weight:600;font-size:1.1rem;color:var(--ink)}
-.narrow{max-width:760px;margin:28px auto 0;text-align:center}
 .stand{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;margin-top:40px}
 .stand > *{grid-column:span 2}
 .stand > :nth-child(4):nth-last-child(2){grid-column:2 / span 2} /* centre a last row of two */

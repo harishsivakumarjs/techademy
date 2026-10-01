@@ -58,7 +58,7 @@ is missing. Resend errors are also logged in the terminal, never sent to the bro
 2. `index.html` – `your-domain.com` (canonical, og:url)
 3. `public/robots.txt` and `public/sitemap.xml` – `your-domain.com`
    (add `/about`, `/services`, `/technologies`, `/contact` to the sitemap)
-4. `src/pages/Home.jsx` – stats (1000+ Students, 4.9/5, 16+ Courses) and the sample `REVIEWS` (names, ratings, text)
+4. `src/pages/Home.jsx` – stats (25+ Years, 4.9/5, 100+ clients) and the sample `REVIEWS` (names, ratings, text)
 5. `src/data/courses.jsx` – course names, descriptions, topics, categories
 6. `src/pages/Contact.jsx` – paste the Google Maps embed in place of the `.map` note
 
