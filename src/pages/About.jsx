@@ -3,84 +3,109 @@ import usePageTitle from '../hooks/usePageTitle'
 import PageHead from '../components/PageHead'
 import Band from '../components/Band'
 
-const DIFFERENTIATORS = [
-  { icon: '👨‍🏫', bg: '#E3F4EA', title: 'Expert Trainers', text: 'Learn from professionals who use these technologies at work every day.' },
-  { icon: '💻', bg: '#DBEAFE', title: 'Hands-on Learning', text: 'Lab practice in every class and real projects for your portfolio.' },
-  { icon: '🤝', bg: '#E0E7FF', title: 'Placement Support', text: 'Resume building, mock interviews and job referrals.' },
+const STAND_FOR = [
+  { icon: '🏆', bg: '#DBEAFE', title: '25+ Years of Experience', text: 'Proven expertise in IT education and professional training.' },
+  { icon: '🎯', bg: '#E0E7FF', title: 'Industry-Relevant Learning', text: 'Programs aligned with evolving technology and workplace needs.' },
+  { icon: '💻', bg: '#DBEAFE', title: 'Practical Learning', text: 'Hands-on experiences that connect knowledge with real-world application.' },
+  { icon: '👨‍🏫', bg: '#E0E7FF', title: 'Expert-Led Training', text: 'Experienced trainers delivering technical expertise and practical insights.' },
+  { icon: '🚀', bg: '#DBEAFE', title: 'Future-Ready Skills', text: 'Continuous learning focused on the technologies shaping tomorrow.' },
 ]
+
+const WHY_CHOOSE = [
+  { icon: '🏆', bg: '#DBEAFE', title: '25+ Years of Experience', text: 'With over 25 years of experience in IT education and professional training, we bring proven expertise, industry understanding, and a commitment to quality learning.' },
+  { icon: '🤝', bg: '#E0E7FF', title: 'Learner-Centric Approach', text: 'Every learner has unique goals and aspirations. Our training is designed to be engaging, relevant, practical, and focused on meaningful outcomes.' },
+  { icon: '📈', bg: '#DBEAFE', title: 'Industry-Relevant Learning', text: "Our programs are aligned with evolving technology trends and industry requirements, helping learners build skills that are relevant to today's workplace." },
+]
+
+function Card({ c }) {
+  return (
+    <div className="mv">
+      <div className="ic" style={{ background: c.bg }}>{c.icon}</div>
+      <h3>{c.title}</h3>
+      <p>{c.text}</p>
+    </div>
+  )
+}
 
 export default function About() {
   usePageTitle('About Us | Techademy Technology and Training Company')
 
   return (
     <>
-      <PageHead crumb="About Us" title="About Techademy">
-        Helping students and professionals build successful careers in technology.
+      <PageHead crumb="About Us" title="About Us">
+        25+ Years of Learning. Evolving with Technology.
       </PageHead>
 
       <section className="sec">
-        <div className="wrap two">
+        <div className="wrap two about-intro">
           <div className="prose">
-            <p>Techademy is a technology and training company helping students, graduates, institutions and working professionals start and grow their careers in technology.</p>
-            <p>We believe people learn technology best by doing it. Every course combines concept classes with lab practice and a real project, guided by trainers who work in the industry.</p>
-            <p>After training, we continue supporting our students with resume preparation, mock interviews and job referrals until they are ready for their first role.</p>
-            <p>Our team brings over 50 years of combined experience in IT and Banking training.</p>
+            <p>For over 25 years, we have been empowering individuals and organizations with the skills needed to succeed in a technology-driven world.</p>
+            <p>At Techademy, we combine decades of training experience, industry-aligned learning, expert trainers, and modern technology to deliver practical and future-ready learning experiences.</p>
           </div>
-          <div className="mvg">
-            <div className="mv">
-              <div className="ic" style={{ background: '#DBEAFE' }}>🎯</div>
-              <h3>Our Mission</h3>
-              <p>To make practical, job-oriented IT training affordable and accessible to every learner.</p>
-            </div>
-            <div className="mv">
-              <div className="ic" style={{ background: '#E0E7FF' }}>🔭</div>
-              <h3>Our Vision</h3>
-              <p>To be the training partner students and companies trust for industry-ready skills.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="sec" style={{ paddingTop: 0 }}>
-        <div className="wrap">
-          <div className="exp">
-            <strong className="exp-num">50+</strong>
-            <div>
-              <h2>Years of combined experience</h2>
-              <p>
-                Across IT and Banking training, our team has helped learners and professionals build practical,
-                job-ready skills.
-              </p>
-            </div>
+          <div className="years">
+            <strong>25+</strong>
+            <span>Years of Experience</span>
           </div>
         </div>
       </section>
 
       <section className="sec" style={{ background: 'var(--bg2)' }}>
         <div className="wrap">
-          <div className="center">
-            <p className="eyebrow">WHY TECHADEMY</p>
-            <h2 className="h2">What Makes Us Different</h2>
-          </div>
-          <div className="why">
-            {DIFFERENTIATORS.map((d) => (
-              <div className="mv" key={d.title}>
-                <div className="ic" style={{ background: d.bg }}>{d.icon}</div>
-                <h3>{d.title}</h3>
-                <p>{d.text}</p>
-              </div>
-            ))}
+          <h2 className="h2 center">Experience That Drives Your Growth</h2>
+          <div className="prose narrow">
+            <p>Technology never stands still — and neither does learning.</p>
+            <p>From foundational IT skills to emerging technologies, we continuously evolve our programs to help students, professionals, and organizations stay relevant, build confidence, and unlock new opportunities.</p>
+            <p>Our approach goes beyond traditional training. We focus on practical knowledge, real-world application, and skills that create lasting impact.</p>
           </div>
         </div>
       </section>
 
       <section className="sec">
         <div className="wrap">
+          <h2 className="h2 center">What We Stand For</h2>
+          <div className="stand">
+            {STAND_FOR.map((c) => (
+              <Card c={c} key={c.title} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec" style={{ paddingTop: 0 }}>
+        <div className="wrap two">
+          <div className="mv">
+            <div className="ic" style={{ background: '#E0E7FF' }}>🔭</div>
+            <h3>Our Vision</h3>
+            <p>To empower people and organizations with the skills to thrive in a rapidly evolving digital world.</p>
+          </div>
+          <div className="mv">
+            <div className="ic" style={{ background: '#DBEAFE' }}>🎯</div>
+            <h3>Our Mission</h3>
+            <p>To deliver impactful technology learning that transforms knowledge into skills, skills into confidence, and confidence into opportunity.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec" style={{ paddingTop: 0 }}>
+        <div className="wrap">
           <Band
-            title="Visit us for a free demo class"
-            text="Meet the trainers and see how our classes work."
+            title="25+ Years Behind Us. A Future Ahead."
+            text="With more than two decades of experience and a constant focus on what’s next, we continue to help learners and organizations Learn. Evolve. Transform."
             action={<Link className="btn btn-primary" to="/contact">Contact Us</Link>}
-          />
+          >
+            <p className="band-note">Build the skills for tomorrow, today.</p>
+          </Band>
+        </div>
+      </section>
+
+      <section className="sec" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <h2 className="h2 center">Why Choose Us?</h2>
+          <div className="why">
+            {WHY_CHOOSE.map((c) => (
+              <Card c={c} key={c.title} />
+            ))}
+          </div>
         </div>
       </section>
     </>
