@@ -4,7 +4,7 @@ import { CATS } from '../data/courses'
 import { LOGOS } from '../data/logos'
 import CourseExplorer from '../components/CourseExplorer'
 import TechLogo from '../components/TechLogo'
-import Accordion from '../components/Accordion'
+import LearningExperience from '../components/LearningExperience'
 import Band from '../components/Band'
 
 // Stats bar under the hero
@@ -58,17 +58,11 @@ const TILES = [
 ]
 
 const STEPS = [
-  { title: 'Learn', text: 'Structured syllabus taught by industry trainers, from basics to advanced topics, in classroom or live online sessions.' },
-  { title: 'Practice', text: 'Daily lab exercises and assignments so you write real code and use real tools in every class.' },
-  { title: 'Build Projects', text: 'Complete real-world projects you can add to your resume and GitHub and explain in interviews.' },
-  { title: 'Assess', text: 'Regular tests and trainer feedback show where you stand and what to improve.' },
-  { title: 'Get Placed', text: 'Resume building, mock technical and HR interviews, and job referrals to help you land your first role.' },
-]
-
-const MOCK_ROWS = [
-  { name: 'Java Full Stack', pct: 72, pill: 'Resume', g: 'linear-gradient(135deg,#0B4F9C,#1596D6)' },
-  { name: 'Project: E-commerce App', pct: 40, pill: 'Start', g: 'linear-gradient(135deg,#7A1F2B,#C0392B)' },
-  { name: 'HTML, CSS & JavaScript', pct: 100, pill: 'Review', g: 'linear-gradient(135deg,#E44D26,#F7B733)' },
+  { title: 'Learn', text: 'Structured syllabus taught by industry trainers, from basics to advanced topics, in classroom or live online sessions.', icon: '📘', points: ['Structured syllabus', 'Taught by industry trainers', 'Basics to advanced topics'] },
+  { title: 'Practice', text: 'Daily lab exercises and assignments so you write real code and use real tools in every class.', icon: '💻', points: ['Daily lab exercises', 'Assignments after every topic', 'Real tools in every class'] },
+  { title: 'Build Projects', text: 'Complete real-world projects you can add to your resume and GitHub and explain in interviews.', icon: '🛠️', points: ['Real-world projects', 'Ready for your resume and GitHub', 'Explain them in interviews'] },
+  { title: 'Assess', text: 'Regular tests and trainer feedback show where you stand and what to improve.', icon: '📝', points: ['Regular tests', 'Trainer feedback', 'Know what to improve'] },
+  { title: 'Get Placed', text: 'Resume building, mock technical and HR interviews, and job referrals to help you land your first role.', icon: '🎓', points: ['Resume building', 'Mock technical and HR interviews', 'Job referrals'] },
 ]
 
 // Sample reviews: replace with real student reviews before going live
@@ -220,29 +214,7 @@ export default function Home() {
             <p className="eyebrow">HOW DO YOU BECOME JOB-READY?</p>
             <h2 className="h2">The Techademy Learning Experience</h2>
           </div>
-          <div className="lx">
-            <Accordion items={STEPS} />
-            <div className="stage" aria-hidden="true">
-              <div className="mock">
-                <div className="t">‹ My Learning</div>
-                <div className="tabs">
-                  <span className="on">Ongoing</span>
-                  <span>Assigned</span>
-                  <span>Completed</span>
-                </div>
-                {MOCK_ROWS.map((r) => (
-                  <div className="mrow" key={r.name}>
-                    <div className="th" style={{ background: r.g }} />
-                    <div className="bar2">
-                      <b>{r.name}</b>
-                      <div className="prog"><i style={{ width: `${r.pct}%` }} /></div>
-                    </div>
-                    <span className="pill">{r.pill}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <LearningExperience steps={STEPS} />
         </div>
       </section>
 
