@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="copy">
-          <span>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} {SITE.legalName} All rights reserved.</span>
         </div>
       </div>
     </footer>

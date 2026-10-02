@@ -3,6 +3,8 @@ const gstin = '33AANCT2916L1Z1'
 
 export const SITE = {
   name: 'Techademy Technology and Training Company',
+  // registered company name, used in the footer copyright line
+  legalName: 'Techademy Training Services Pvt. Ltd.',
   email: 'director@techademytraining.com',
   address: 'Tiruchengode, Namakkal, Tamil Nadu, 637211',
   addressShort: 'Tiruchengode, Namakkal, Tamil Nadu, 637211',
