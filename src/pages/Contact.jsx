@@ -109,6 +109,7 @@ export default function Contact() {
             <div className="ci"><span className="ic">📍</span><div><b>Address</b><span>{SITE.address}</span></div></div>
             <div className="ci"><span className="ic">✉️</span><div><b>Email</b><a href={`mailto:${SITE.email}`}>{SITE.email}</a></div></div>
             <div className="ci"><span className="ic">🕘</span><div><b>Office Hours</b><span>{SITE.hours}</span></div></div>
+            <div className="ci"><span className="ic">🧾</span><div><b>GST Number</b><span className="gstin">{SITE.gstin}</span></div></div>
             {/* Paste your Google Maps embed <iframe> here in place of this note */}
             <div className="map">
               Google Map embed goes here — paste the "Embed a map" iframe code from Google Maps when deploying.

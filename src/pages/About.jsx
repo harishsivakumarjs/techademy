@@ -1,4 +1,5 @@
 import usePageTitle from '../hooks/usePageTitle'
+import { SITE } from '../config'
 import PageHead from '../components/PageHead'
 
 const STAND_FOR = [
@@ -85,6 +86,15 @@ export default function About() {
             {WHY_CHOOSE.map((c) => (
               <Card c={c} key={c.title} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="company">
+            <span>{SITE.name}</span>
+            <span className="gstin">GSTIN: {SITE.gstin}</span>
           </div>
         </div>
       </section>

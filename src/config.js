@@ -2,7 +2,8 @@
 export const SITE = {
   name: 'Techademy Technology and Training Company',
   email: 'director@techademytraining.com',
-  address: 'NO.36/11, C.H.B COLONY, TREET-4, TIRUCHENGODU, Tiruchengode, Namakkal, Tamil Nadu, 637211',
-  addressShort: 'C.H.B Colony, Tiruchengode',
+  address: 'Tiruchengode, Namakkal, Tamil Nadu, 637211',
+  addressShort: 'Tiruchengode, Namakkal, Tamil Nadu, 637211',
   hours: 'Monday – Saturday, 9:00 AM – 7:00 PM',
+  gstin: '33AANCT2916L1Z1',
 }
